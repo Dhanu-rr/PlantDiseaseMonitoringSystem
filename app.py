@@ -4,9 +4,11 @@ import json
 import uuid
 import tensorflow as tf
 import keras  
-
+import os
 app = Flask(__name__)
-
+MODEL_PATH = os.path.join("models", "InceptionV3_PlantDiseaseModel.keras")
+print("✅ Checking model path:", os.path.abspath(MODEL_PATH))
+print("✅ Exists:", os.path.exists(MODEL_PATH))
 
 model=tf.keras.models.load_model("models/InceptionV3_PlantDiseaseModel.keras")
 
