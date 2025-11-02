@@ -10,7 +10,7 @@ MODEL_PATH = os.path.join("models", "InceptionV3_PlantDiseaseModel.keras")
 print("✅ Checking model path:", os.path.abspath(MODEL_PATH))
 print("✅ Exists:", os.path.exists(MODEL_PATH))
 
-model=tf.keras.models.load_model("models/InceptionV3_PlantDiseaseModel.keras")
+model=tf.keras.models.load_model("/app/models/InceptionV3_PlantDiseaseModel.keras")
 
 # Labels
 label = [
